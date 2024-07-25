@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Simple Price Grid</title>
+    <style>
+      body {
+        font-family: "Karla", sans-serif;
+        font-style: normal;
+        line-height: normal;
+        background: #e6eff5;
+      }
+      h2,
+      h3 {
+        font-weight: 700;
+      }
+
+      h2 {
+        color: #2ab3b1;
+        font-size: 24px;
+
+        letter-spacing: -0.3px;
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 18px;
+
+        letter-spacing: -0.225px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: -0.2px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .full-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .price-component {
+        width: 635px;
+        background-color: #fff;
+      }
+      .price-component__community-msg {
+        padding: 40px;
+      }
+      .msg_main-heading {
+        padding-bottom: 24px;
+      }
+      .msg_sub-heading {
+        color: #c0df33;
+        padding-bottom: 12px;
+      }
+      p.msg_para {
+        color: #9aa7be;
+      }
+      .subscription {
+        display: flex;
+      }
+      .subscription_price {
+        background: #2ab3b1;
+      }
+      .monthly-heading {
+        padding-bottom: 18px;
+      }
+      .subscription_why {
+        background-color: #2ab3b1bf;
+      }
+
+      .subscription > div {
+        padding: 40px;
+        flex: 1;
+      }
+      .why_para {
+        color: #fff;
+        padding-top: 18px;
+      }
+      p.price_per_month {
+        color: #fff;
+        font-size: 32px;
+      }
+      p .per-month {
+        opacity: 0.5;
+        font-size: 16px;
+      }
+      .price-tag-line {
+        color: #fff;
+        padding-top: 8px;
+        padding-bottom: 26px;
+      }
+      .sign-up {
+        display: inline-block;
+        border-radius: 5px;
+        background: #c0df33;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+        padding: 14px 89px;
+      }
+
+      @media (max-width: 460px) {
+        .subscription {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="full-page">
+      <div class="price-component">
+        <div class="price-component__community-msg">
+          <h2 class="msg_main-heading">Join our community</h2>
+          <h3 class="msg_sub-heading">
+            30-day, hassle-free money back guarantee
+          </h3>
+          <p class="msg_para">
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+          </p>
+        </div>
+
+        <div class="subscription">
+          <div class="subscription_price">
+            <h3 class="monthly-heading">Monthly Subscription</h3>
+            <p class="price_per_month">
+              $29 <span class="per-month">per month</span>
+            </p>
+            <p class="price-tag-line">Full access for less than $1 a day</p>
+            <a href="#" class="sign-up">Sign Up</a>
+          </div>
+          <div class="subscription_why">
+            <h3>Why Us</h3>
+            <p class="why_para">
+              Tutorials by industry expertsPeer & expert code reviewCoding
+              exercisesAccess to our GitHub reposCommunity forumFlashcard
+              decksNew videos every week
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
